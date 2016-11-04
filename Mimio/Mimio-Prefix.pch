@@ -1,0 +1,22 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+
+#ifndef __IPHONE_7_0
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "Define.h"
+#endif
+
+#ifdef DEBUG // 处于开发阶段
+#define Log(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define Log(...)
+#endif
