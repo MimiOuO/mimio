@@ -1,0 +1,2 @@
+# mimio
+is a calendar
